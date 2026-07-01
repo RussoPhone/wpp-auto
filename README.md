@@ -57,8 +57,69 @@ e então execute
 
 
 #Inicialização Automática
- Adicione o script á inicialização automática do KDE PLasma ou crie um serviço de usuário com o comando "systemd"
+ Adicione o script á inicialização automática do KDE PLasma ou crie um serviço de usuário com o "systemd"
 
 OBS: O script não inclui wallpapers. Ele apenas procura na pasta configurada e escolhe qual aplicar dependendo da hora.
 
 
+ENG
+
+Simple script to switch wallpapers on KDE Plasma based on the time of day. Compatible with multiple screens.
+
+#Requirements
+KDE Plasma
+qdbus6 or qdbus
+Bash
+
+#Folder structure
+
+-By default, the script expects the wallpapers to be inside:
+
+~/Imagens/wpp
+
+The basic organization uses two folders:
+
+~/Imagens/wpp/
+|- d/ #Wallpaper for the daytime period
+|- n/ #Wallpaper for the nighttime period
+
+Example:
+
+~/Imagens/wpp/
+|- d/
+| |- wallpaper-day-1.png
+| |- wallpaper-day-2.jpg
+|
+|
+|- n/
+| |- wallpaper-night-1.png
+|- wallpaper-night-2.jpg
+
+It is also possible to use different wallpapers for each screen.
+
+The folder structure would then be:
+~/Imagens/wpp/
+|---t1/ # First screen
+| |-d/
+| |-n/
+|
+|---t2/ # Second screen
+| |-d/
+| |-n/
+
+Usage
+
+Give the script execution permission:
+
+" chmod +x wpp-auto "
+
+and then run
+" ./wpp-auto "
+
+#Automatic Startup
+Add the script to KDE Plasma automatic startup or create a user service with the command "systemd"
+
+NOTE: The script does not include wallpapers. It only searches the configured folder and chooses which one to apply depending on the time.
+
+
+Thank you/Obrigado
