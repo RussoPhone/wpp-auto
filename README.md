@@ -64,7 +64,7 @@ OBS: O script não inclui wallpapers. Ele apenas procura na pasta configurada e 
 
 ENG
 
-Simple script to switch wallpapers on KDE Plasma based on the time of day. Compatible with multiple screens.
+Simple script to switch wallpapers on KDE Plasma based on the time of day. Currently made for dual  screens. (Soon will have single and multiple setup, else you could add a new folder structure to the script)
 
 #Requirements
 KDE Plasma
@@ -95,7 +95,7 @@ Example:
 | |- wallpaper-night-1.png
 |- wallpaper-night-2.jpg
 
-It is also possible to use different wallpapers for each screen.
+It is also CURRENTLY MADE TO USE WITH DUAL MONITOR SETUPS!. Later will be added support for single-monitors, or else you could just follow the following folder structure, even without a second monitor:
 
 The folder structure would then be:
 ~/Imagens/wpp/
@@ -121,5 +121,8 @@ Add the script to KDE Plasma automatic startup or create a user service with the
 
 NOTE: The script does not include wallpapers. It only searches the configured folder and chooses which one to apply depending on the time.
 
+## License
+
+No license added yet...
 
 Thank you/Obrigado
